@@ -19,5 +19,5 @@
 
 // VS Code Settings Changes
 
-1. Installed Prettier extension
+1. Installed Prettier extension (HATE IT)
 2. Set to format on save
