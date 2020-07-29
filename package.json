@@ -1,0 +1,22 @@
+{
+  "name": "bt-portfolio-1",
+  "version": "1.0.0",
+  "description": "BT Portfolio Tutorial Site",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpyrosh/bt-portfolio-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xpyrosh/bt-portfolio-1/issues"
+  },
+  "homepage": "https://github.com/xpyrosh/bt-portfolio-1#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
