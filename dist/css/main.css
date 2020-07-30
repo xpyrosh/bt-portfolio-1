@@ -35,6 +35,9 @@ input[class^="btn-"]:hover {
 .text-center {
   text-align: center; }
 
+.txt-type .txt {
+  border-right: 0.2rem solid #ffbc00; }
+
 * {
   margin: 0;
   padding: 0; }
