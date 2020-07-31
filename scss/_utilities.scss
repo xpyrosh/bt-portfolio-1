@@ -82,20 +82,41 @@ input[class^="btn-"]:hover {
   }
 }
 
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: .5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
 // Cursor effect for typewriter
 .txt-type {
   .txt {
     border-right: .2rem solid $main-color;
-    
-    // animating the cursor lagged while typing
-    // animation: fadeIn 1s infinite alternate;
-    // @keyframes fadeIn {
-    //   0% {
-    //     border-right: transparent;
-    //   }
-    //   100% {
-    //     border-right: .2rem solid $main-color;
-    //   }
-    // }
   }
+}
+
+.cursor {
+  //animating the cursor makes the text shift to make space when fading in
+
+  // border-right: .2rem transparent $main-color;
+  // animation: fadeIn 1s infinite alternate;
+  // @keyframes fadeIn {
+  //   0% {
+  //     border-right: .2rem transparent;
+  //   }
+  //   100% {
+  //     border-right: .2rem solid $main-color;
+  //   }
+  // }
 }

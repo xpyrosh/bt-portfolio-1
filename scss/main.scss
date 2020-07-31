@@ -100,6 +100,7 @@ img {
 
 // Home Sections
 #home{
+  // Section A
   &-a {
     .specials {
       margin-top: 3rem;
@@ -114,6 +115,7 @@ img {
     }
   }
 
+  // Section B
   &-b {
     .stats {
       margin-top: 3rem;
@@ -139,6 +141,54 @@ img {
         }
         &:nth-child(even) {
           background: $medium-color;
+        }
+      }
+    }
+  }
+
+  // Section C
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      text-align: center;
+
+      &-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 28px;
+        background: $main-color;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        line-height: 15px;
+        padding: 1rem;
+        transition: all 1s;
+      }
+
+      &-icon {
+        border-radius: 50%;
+        background: $dark-color;
+        color: white;
+        padding: 2rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        position: relative;
+        transition: all 1s;
+
+        &:hover {
+          background: $main-color;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+
+          .process-step {
+            background: $dark-color;
+          }
         }
       }
     }
