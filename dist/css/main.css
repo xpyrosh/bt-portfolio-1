@@ -137,7 +137,8 @@ input[class^="btn-"]:hover {
     left: 0;
     width: 100%;
     height: auto;
-    line-height: 0; }
+    line-height: 0;
+    object-fit: cover; }
   .item-text {
     position: absolute;
     top: 0;
