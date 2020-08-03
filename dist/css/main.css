@@ -370,18 +370,31 @@ img {
   gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
-    grid-area: name; }
+    grid-area: name;
+    border: 1px solid #000;
+    border-radius: 5px; }
   #contact-a .text-fields .subject-input {
-    grid-area: subject; }
+    grid-area: subject;
+    border: 1px solid #000;
+    border-radius: 5px; }
   #contact-a .text-fields .email-input {
-    grid-area: email; }
+    grid-area: email;
+    border: 1px solid #000;
+    border-radius: 5px; }
   #contact-a .text-fields .phone-input {
-    grid-area: phone; }
+    grid-area: phone;
+    border: 1px solid #000;
+    border-radius: 5px; }
   #contact-a .text-fields .message-input {
     grid-area: message;
-    height: 100px; }
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 5px; }
   #contact-a .text-fields .text-input {
     padding: .5rem 1rem; }
+  #contact-a .text-fields input:focus,
+  #contact-a .text-fields textarea:focus {
+    border: 1px solid #ffbc00; }
 
 #contact-a button[type='submit'] {
   width: 50%;
@@ -416,3 +429,71 @@ img {
       padding: .5rem; }
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00; }
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem; }
+    #header-home .header-content {
+      padding-top: 5rem; } }
+
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #ffbc00; }
+    #header-home .header-content {
+      display: none; }
+  #header-inner {
+    height: 10rem; }
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr; }
+  #home-a .specials div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem; }
+    #home-a .specials div:last-child {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0; }
+  #home-b .stats {
+    margin-top: 0; }
+  #home-b .stats div {
+    padding: 2rem 0 1rem 0; }
+  #about-a .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
+  #contact-a .text-fields {
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+  #contact-b div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #555 solid; }
+    #contact-b div:last-child {
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+  #contact-c h1 {
+    font-size: 2rem; }
+  #main-footer {
+    height: 7rem; }
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem; }
+      #main-footer .footer-content .social .fab {
+        margin: 0 .5rem; } }
+
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 3rem; } }
+
+@media (max-height: 330px) {
+  #header-home .header-content h1 {
+    font-size: 2rem; } }

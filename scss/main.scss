@@ -274,7 +274,7 @@ img {
     }
   }
 
-  // Section D
+  // About D
   &-d {
     .testimonials {
       display: grid;
@@ -320,28 +320,43 @@ img {
       // Grid Areas
       .name-input {
         grid-area: name;
+        border: 1px solid #000;
+        border-radius: 5px;
       }
       
       .subject-input {
         grid-area: subject;
+        border: 1px solid #000;
+        border-radius: 5px;
       }
 
       .email-input {
         grid-area: email;
+        border: 1px solid #000;
+        border-radius: 5px;
       }
 
       .phone-input {
         grid-area: phone;
+        border: 1px solid #000;
+        border-radius: 5px;
       }
 
       .message-input {
         grid-area: message;
         height: 100px;
+        border: 1px solid #000;
+        border-radius: 5px;
       }
 
       // Text Input
       .text-input {
         padding: .5rem 1rem;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: 1px solid $main-color;
       }
     }
 
@@ -398,3 +413,6 @@ img {
     }
   }
 }
+
+// Media Queries for responsiveness
+@import 'media'
