@@ -93,6 +93,9 @@ input[class^="btn-"]:hover {
 .txt-type .txt {
   border-right: 0.2rem solid #ffbc00; }
 
+.fadein {
+  opacity: 0; }
+
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -138,7 +141,7 @@ input[class^="btn-"]:hover {
     width: 100%;
     height: auto;
     line-height: 0;
-    object-fit: coverg; }
+    object-fit: cover; }
   .item-text {
     position: absolute;
     top: 0;
