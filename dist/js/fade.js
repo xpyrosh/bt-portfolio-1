@@ -5,7 +5,7 @@ $(document).ready(function () {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
             if(bottom_of_window > bottom_of_element) {
-                $(this).animate({'opacity':'1'}, 1000);
+                $(this).animate({'opacity':'1'}, 750);
             }
         });
     });
